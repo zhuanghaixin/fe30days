@@ -3,10 +3,12 @@ function execTime(t) {
 // setTimeout(()=>{
 //     console.log("过一会儿执行");
 // },t);
+   console.time('timer');
    let startTime=(new Date()).getTime();
    while(new Date()-startTime<=t){
        //什么也不做
    }
+    console.timeEnd('timer');
    return ;
 }
 console.log(1) //输出1
